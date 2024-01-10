@@ -1,3 +1,20 @@
+ใน Folder Front-End
+แก้ไฟล์ run.sh ดังนี้
+# ถ้าใช้ pm2 ให้ uncomment ตัวแรก แล้ว comment ตัวล่าง
+npm install && vite build && cd Deploy && pm2 start server.js
+
+# ถ้าใช้ nodemon ให้ uncomment ตัวล่าง แล้ว comment ตัวบน
+npm install && vite build && cd Deploy && npm run deploy
+* แก้ File .env 
+VITE_APP_ENV_HOST=http://172.29.31.52:8082 (domain name backend)
+ENV_PORT=8080 (port front end)
+
+* cd Front-End แล้วใช้คำสั่ง npm run deploy
+
+ใน Folder Black-End
+cd Black-End แล้วใช้คำสั่ง npm run deploy
+
+
 // PostSabuy
 EB994308092TH
 EC003399278TH
